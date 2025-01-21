@@ -7,7 +7,7 @@
 .main{
     height: 100vh;
     width: 100%;
-    background-color: #142d4c;
+    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,8 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: aliceblue;
+    color: white;
+    background-color: rgb(56, 56, 56);
     box-shadow: 0px 0px 10px white;
 }
 .card input{
@@ -41,3 +42,27 @@
     cursor: pointer;
     
 }
+
+@media screen and (max-width:425px){
+    .card {
+        height: 25rem;
+        width: 18rem;
+    }
+    .card input {
+        height: 3rem;
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 320){
+.card {
+    height: 22rem;
+    width: 15rem;
+}
+.card h2{
+    font-size: 15px;
+}
+}
+
+
+
