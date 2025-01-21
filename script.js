@@ -15,7 +15,8 @@ button.addEventListener("click", ()=>{
         const userInputValue = encodeURIComponent(input.value); // Encode the input value to handle special characters
       if (userInputValue) {
         // Redirect to the second website with the input value in the query string
-        window.location.href = `https://resultqr.netlify.app/?h1Text=${userInputValue}`;
+          img.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://resultqr.netlify.app/?h1Text=${userInputValue}`
+        
       } else {
         alert('Please enter a value!');
       }
