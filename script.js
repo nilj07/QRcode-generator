@@ -14,7 +14,7 @@ button.addEventListener("click", ()=>{
         
         let msg = value;
         let set =  window.location.href = `https://resultqr.netlify.app?h1Text=${msg}`;
-        img.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${set)`
+        img.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${set}`
 
     }
     
